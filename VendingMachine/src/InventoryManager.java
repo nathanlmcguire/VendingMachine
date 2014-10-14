@@ -27,7 +27,7 @@ extends java.lang.Object
 	 */
 	public static void addProduct()
 		{
-		listProducts.add(new ProductManager(product, quantity));
+		
 		}
 	/*
 	 * makes sure that the itemCode passed in is a valid item code
