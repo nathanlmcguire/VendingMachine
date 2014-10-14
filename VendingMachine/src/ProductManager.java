@@ -18,8 +18,7 @@ public class ProductManager
 	public static void runAllProductManagerMethods()
 		{
 		
-		}
-	
+		}	
 	public void ProductManager(String ic, Product p, int q)
 		{
 		itemCode = ic;
@@ -38,7 +37,7 @@ public class ProductManager
 	 */
 	public Product getProduct()
 		{
-		
+		return product;
 		}
 	/*
 	 * takes the variable that represents the last item code used and increments it
@@ -52,14 +51,20 @@ public class ProductManager
 	 */
 	public boolean isInStock()
 		{
-		return false;
+		if(itemChoice => quantity )
+			return true; 
+		else
+			return false;
 		}
 	/*
 	 * checks to make sure this item is vendable
 	 */
 	public boolean vendItem()
 		{
-		
+		if(itemChoice => numberOfSnacks)
+			return true;
+		else
+		return false;
 		}
 	
 	/*

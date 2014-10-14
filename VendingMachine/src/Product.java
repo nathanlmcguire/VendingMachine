@@ -20,7 +20,8 @@ public class Product
 	 */
 	public int getPrice()
 		{
-		return ;
+		if(currentCents => )
+		return costInCents;
 		}
 	/*
 	 * will return the snack name
