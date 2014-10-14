@@ -20,7 +20,7 @@ public class Product
 	 */
 	public int getPrice()
 		{
-		return "";
+		return ;
 		}
 	/*
 	 * will return the snack name

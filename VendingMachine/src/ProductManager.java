@@ -31,7 +31,7 @@ public class ProductManager
 	 */
 	public String getItemCode()
 		{
-		
+		return itemCode;
 		}
 	/*
 	 * will return the product that ProductManager is managing
@@ -52,7 +52,7 @@ public class ProductManager
 	 */
 	public boolean isInStock()
 		{
-		
+		return false;
 		}
 	/*
 	 * checks to make sure this item is vendable
@@ -72,7 +72,7 @@ public class ProductManager
 	 * 
 	 * is the item in stock(if statement)
 	 * 		if yes proceed
-	 * 		if no return tot he previous step
+	 * 		if no return to he previous step
 	 * 
 	 * did they insert enough money?(if statement)
 	 * 	 	if yes proceed
