@@ -16,17 +16,20 @@ public class Product
 		costInCents = cic;
 		}
 	/*
-	 * will return the snack name
-	 */
-	public String getSnackName()
-		{
-		
-		}
-	/*
 	 * will return the price of the chosen snack
 	 */
 	public int getPrice()
 		{
+		if(currentCents => )
+		return costInCents;
+		}
+	/*
+	 * will return the snack name
+	 */
+	public String getSnackName()
+		{
+			return snackName;
 		
 		}
+
 	}

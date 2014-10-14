@@ -18,8 +18,7 @@ public class ProductManager
 	public static void runAllProductManagerMethods()
 		{
 		
-		}
-	
+		}	
 	public void ProductManager(String ic, Product p, int q)
 		{
 		itemCode = ic;
@@ -31,14 +30,14 @@ public class ProductManager
 	 */
 	public String getItemCode()
 		{
-		
+		return itemCode;
 		}
 	/*
 	 * will return the product that ProductManager is managing
 	 */
 	public Product getProduct()
 		{
-		
+		return product;
 		}
 	/*
 	 * takes the variable that represents the last item code used and increments it
@@ -52,14 +51,20 @@ public class ProductManager
 	 */
 	public boolean isInStock()
 		{
-		
+		if(itemChoice => quantity )
+			return true; 
+		else
+			return false;
 		}
 	/*
 	 * checks to make sure this item is vendable
 	 */
 	public boolean vendItem()
 		{
-		
+		if(itemChoice => numberOfSnacks)
+			return true;
+		else
+		return false;
 		}
 	
 	/*
@@ -72,7 +77,7 @@ public class ProductManager
 	 * 
 	 * is the item in stock(if statement)
 	 * 		if yes proceed
-	 * 		if no return tot he previous step
+	 * 		if no return to he previous step
 	 * 
 	 * did they insert enough money?(if statement)
 	 * 	 	if yes proceed
