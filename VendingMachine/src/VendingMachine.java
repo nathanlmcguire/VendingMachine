@@ -8,35 +8,41 @@ public class VendingMachine
 	private InventoryManager im;
 	private Scanner keypad;
 	
-	public static void main(java.lang.String[] args)//main method
+	public void main(java.lang.String[] args)//main method
 		{
-		runAllVendingMachineMethods();
-		Cashier.runAllCashierMethods();
+		Object <VendingMachine> VendingMachineObject = new Object <VendingMachine>();
+		turnOn();
+		listen();
 		}
 	
-	public void alerUser()//Prints out user inputs to this machine
-		{
-		
-		}
-	
-	public void initProducts()//hard code snacks
+	public void alertUser()//Prints out user inputs to this machine
 		{	
+		System.out.println("Welcome to the Nameless Group Inc. Vending Machine.");
+		System.out.println("This machine is now ready to be used.");
+		System.out.println("Here are the products available to you:");
+		for(int i; i < Product.stock.size(); i++)
+			{
+			System.out.println("------------------------------------------");
+			System.out.println(ProductManager.stock.get(i).getItemCode() + ": " + ProductManager.stock.get(i).getProduct() + ", $" + Product.stock.get(i).getPrice());		
+			System.out.println("------------------------------------------");
+			}
+		}
 	
+	public void initProducts()//
+		{	
+		//This is where the other three classes go
 		}
 	
 	public void listen()//infinite loop that listens for keypad input
 		{
-	
+		Cashier.addMoney();
+		Cashier.purchase();
 		}
 	
 	public void turnOn()//initializes products into the vending machine
 		{
-	
-		}
-
-	public static void runAllVendingMachineMethods()//runs all methods in this class
-		{
-		
+		initProducts();
+		alertUser();		
 		}
 	}
 //1 User inserts money only coins

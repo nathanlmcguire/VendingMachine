@@ -12,7 +12,7 @@ public class VendingMachine
 	public static void main(java.lang.String[] args)//main method
 		{
 		//make vending machine obj
-		String <VendingMachine> VendingMachineObject = new String<VendingMachine>();
+		String <VendingMachine> VendingMachineObject = new String<VendingMachine>();//good????
 		turnOn();
 		listen();
 		}
@@ -47,12 +47,10 @@ public class VendingMachine
 		}
 	
 	}
-//1 User inserts money only coins
+//User inserts money only coins
 //User enters selection(2 digit)
 //Is the number valid(if statement)
 //Is the item in stock(if statement)
 //Did the user insert enough $(if statement)
 //Machine releases item
 //Machine returns best change
-//
-
